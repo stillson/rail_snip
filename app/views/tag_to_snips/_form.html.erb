@@ -1,0 +1,27 @@
+<%= form_with(model: tag_to_snip, local: true) do |form| %>
+  <% if tag_to_snip.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(tag_to_snip.errors.count, "error") %> prohibited this tag_to_snip from being saved:</h2>
+
+      <ul>
+        <% tag_to_snip.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :tag_id %>
+    <%= form.text_field :tag_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :snip_id %>
+    <%= form.text_field :snip_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

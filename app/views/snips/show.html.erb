@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @snip.description %>
+</p>
+
+<p>
+  <strong>Fragment:</strong>
+  <%= @snip.fragment %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @snip.user_id %>
+</p>
+
+<p>
+  <strong>Version:</strong>
+  <%= @snip.version %>
+</p>
+
+<%= link_to 'Edit', edit_snip_path(@snip) %> |
+<%= link_to 'Back', snips_path %>

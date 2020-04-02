@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tag:</strong>
+  <%= @tag_to_snip.tag_id %>
+</p>
+
+<p>
+  <strong>Snip:</strong>
+  <%= @tag_to_snip.snip_id %>
+</p>
+
+<%= link_to 'Edit', edit_tag_to_snip_path(@tag_to_snip) %> |
+<%= link_to 'Back', tag_to_snips_path %>
